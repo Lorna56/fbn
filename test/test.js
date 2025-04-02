@@ -27,6 +27,9 @@ describe("Fibonacci function tests for non-integers", () => {
   it("Should throw an error for fibonacci(1.5)", () => {
     assert.throws(() => fibonacci(1.5), Error);
   });
+  it("Should throw an error for fibonacci(string)", () => {
+    assert.throws(() => fibonacci("string"), Error);
+  });
 });
 
 
