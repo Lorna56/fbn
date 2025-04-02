@@ -14,5 +14,10 @@ describe("Fibonacci Function tests for valid integers", () => {
     assert.equal(fibonacci(10), 55);
   });
 });
+describe("Fibonacci function tests for invalid integers", () => {
+  it("Should throw an error for fibonacci(41)", () => {
+    assert.throws(() => fibonacci(41), Error);
+  });
+});
 
 
