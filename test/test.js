@@ -18,6 +18,9 @@ describe("Fibonacci function tests for invalid integers", () => {
   it("Should throw an error for fibonacci(41)", () => {
     assert.throws(() => fibonacci(41), Error);
   });
+  it("Should throw an error for fibonacci(-1)", () => {
+    assert.throws(() => fibonacci(-1), Error);
+  }); 
 });
 
 
