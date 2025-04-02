@@ -1,4 +1,6 @@
 const fibonacci = (num) => {
-    return num;
-};
-export default fibonacci;
+    
+    return num <= 1 ? num : fibonacci(num - 1) + fibonacci(num - 2);
+  };
+  
+  export default fibonacci;
